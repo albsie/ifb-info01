@@ -1,0 +1,29 @@
+/* Nachfahrenkombinator */
+header h1 em{
+    color: red;
+}
+/* Kindkombinator: > */
+main p > em{
+    color: orange;
+}
+main p del > em{
+    color: yellow;
+}
+#sibling h2{
+    color: red;
+}
+/* Nachbarkombinator: + */
+#sibling h2 + p{
+    font-weight: bold;
+}
+#sibling p + p{
+    color: red; 
+}
+/* Geschwisterkombinator: ~ (Tilde): selektiert alle
+Geschwister Elemente die nach dem angesprochenen 
+Element kommen. */
+section h3~p{
+    font-weight: bold;
+}
+
+

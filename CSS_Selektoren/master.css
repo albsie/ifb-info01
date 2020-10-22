@@ -1,0 +1,78 @@
+/* Universalselektor */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typenselektoren */
+h1,
+h3,
+h4 {
+    color: white;
+}
+
+/* Klassenselektoren => mit . */
+.box {
+    background-color: green;
+}
+
+/* ID-Selektoren => mit # */
+#mainHeader {
+    font-family: Helvetica, sans-serif;
+    color: orange;
+}
+
+#lastHeader {
+    font-size: 2em;
+}
+
+
+#wrapper {
+    color: orange;
+}
+
+.container {
+    color: blue;
+}
+
+div {
+    color: red !important;
+}
+
+#wrapper {
+    color: green;
+}
+
+/* Attributselektoren */
+
+[href] {
+    color: black;
+    font-size: 2em;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+[target] { /* Selektiert alle Atribute target */
+    color: red;
+}
+
+[target=_self] { /* Selektiert alle Atribute target mit dem Wert _self*/
+    background-color: yellow;
+}
+
+[title~=Zeichenkette] { /* Selektiert alle Atribute titel die im Wert das Wort Zeichenkette haben */
+    background-color: blue;
+    color:white;
+}
+[hreflang|=de]{ /* Selektiert eine Zeichenkette, die durch den Bindestrich vom Rest des Attributwerts getrennt ist. */
+    font-weight: bold;
+}
+[href^="https://"]{ /* Selektiert alle href die mit "https://" beginnen */
+    font-style: italic;
+}
+[href$=".com"]{ /* Selektiert alle href die mit ".com" enden */
+    text-decoration: underline;
+}
+[href*="ww"]{ /* Selektiert alle href die im Wert ein www enthalten */
+    font-family: fantasy;
+}

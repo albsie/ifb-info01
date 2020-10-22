@@ -1,0 +1,62 @@
+/* strukturelle Pseudoklassen */
+/* :first_child - erste Kindelement*/
+ul{
+    background-color: bisque;
+}
+ul :first-child{
+    background-color: red;
+}
+/* :last-child - letztes Kind Element */
+ul :last-child{
+    background-color: orange;
+}
+/* :nth-child() odd = alle ungeraden Elemente, even = alle Elemente mit gerade Platznummer*/
+ul :nth-child(even){
+    background-color: green;
+}
+/* :nth-last-child() - die Zählung beginnt von hinten*/
+ul :nth-last-child(3){
+    background-color: blue;
+}
+/* only-child spricht ein Element an, welches das einzige Kind seines Elternelements ist. */
+ul :only-child{
+    background-color: yellow;
+}
+/* :first-of-type */
+ul li:first-of-type{
+    color: white;
+}
+/* :last-of-type */
+ul li:last-of-type{
+    color: white
+}
+/* :nth-of-type() */
+ul li:nth-of-type(even){
+    color: white;
+}
+/* :nth-last-of-type */
+ul li:nth-last-of-type(3){
+    color: lightgreen
+}
+/* :only-of-type */
+ul li:only-of-type{
+    color: red;
+}
+/* dynamischen Pseudoklassen - verändern sich je nach Aktion auf der Seite */
+
+#link a{
+    color: black;
+    display: block;
+    padding: 5px;
+}
+#link div a:link{
+    background-color: red;
+}
+#link div a:visited{
+    color: red;
+    background-color: green;
+}
+
+
+
+

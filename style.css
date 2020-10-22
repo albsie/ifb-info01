@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    background-color: blue;
+}
+
+header nav ul li {
+    display: inline-block;
+    width: 24.7%;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header nav ul li:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+main div img {
+    width: 100%;
+}
