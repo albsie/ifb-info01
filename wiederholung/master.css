@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+
+main > div > p{
+    color: red;
+}
+main > div > aside > div > p{
+    color: yellow;
+}
+main > div > aside > div > section > div > p {
+    color: blue;
+}
+.box{
+    background-color: orange;
+    margin: 10px 0;
+}
+.red{
+    color:red;
+}
+#container{
+    background-color: lightcyan;
+}
+ul{
+    height: 2000px;
+}
+ul :nth-child(5){
+    color: red;
+}
+ul :nth-last-child(5){
+    color: orange;
+}
+ul :last-child{
+    color: red;
+}
+ul :first-of-type{
+    color: red;
+}
+ul :nth-child(even){
+    background-color: lightgreen;
+}
+ul :nth-child(odd){
+    background-color: lightblue;
+}
+
+
+
