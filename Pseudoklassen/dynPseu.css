@@ -1,0 +1,55 @@
+main ul li{
+    padding: 10px;
+}
+main ul li a{
+    padding: 5px;
+}
+/*
+hover: die Eigenschaft verändert sich, wenn man das Element
+mit der Maus berührt
+*/
+main ul li a:hover{
+    background-color: blue;
+    color: white;
+}
+/*
+focus: den Fokus eines Elements erhalten -> zB mit Tabulatortaste
+*/
+main ul li a:focus{
+    background-color: orange;
+}
+/* Element, dass aktuell angeklickt ist */
+main ul li a:active{
+    background-color: red;
+}
+/*
+selektiert die disabled Input-Felder und fügt einen
+dynamischen Text ein
+*/
+main div ul li input:disabled + span::after{
+    content: " nicht auswählbar";
+    color: red;
+}
+/*
+selektiert alle enabled-Input und fügt einen dynamischen Text
+dazu
+*/
+main div ul li input:enabled + span::after{
+    content: " auswählbar";
+    color: green;
+}
+/*
+selektiert alle checked-Input Felder und fügt einen dynamischen
+Text dazu
+*/
+main div ul li input:checked + span::after{
+    content: " ausgewählt";
+    color: blue;
+}
+main div ul li input:disabled{
+    outline: 2px solid red;
+    background-color: red;
+}
+main div ul li input:checked{
+    outline: 2px solid green;
+}
