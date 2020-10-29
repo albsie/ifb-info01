@@ -53,3 +53,29 @@ main div ul li input:disabled{
 main div ul li input:checked{
     outline: 2px solid green;
 }
+
+main div form label{
+    display: block;
+}
+main div form input{
+    margin-bottom: 5vh;
+}
+/*
+spricht die Input-Felder mit richtiger Value an
+*/
+main div form input:valid{
+    color: green;
+}
+/*
+spricht die Input-Felder mit falscher Value an
+*/
+main div form input:invalid{
+    color: red;
+}
+/*
+spricht alle Inputfelder mit einem Placeholder an
+*/
+main div form input:placeholder-shown{
+    background-color: blue;
+    color: white;
+}
