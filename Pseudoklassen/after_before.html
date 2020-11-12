@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>after_before Element</title>
+    <style>
+        ul li::before{
+             background-image: url(check.png);
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            margin-bottom: -5px;
+            margin-top: 10px;
+           content: "";
+        }
+        ul li:active:after{
+             background-image: url(check.png);
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            margin-bottom: -5px;
+            margin-top: 10px;
+            margin-left: 20px;
+           content: "";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>After und Before</h1>
+    </header>
+    <main>
+        <h2>::before und ::after</h2>
+        <p>::before und ::after erzeugt ein Pseudoelement, dass das erste oder letzte
+        Kind des erzeugten Element ist. Sie werden oft verwendet um kosmetische Inhalte
+        mit der Eigenschaft "content" zu einem Element hinzuzufügen</p>
+
+        <ul>
+            <li>Liste 01</li>
+            <li>Liste 02</li>
+            <li>Liste 03</li>
+            <li>Liste 04</li>
+            <li>Liste 05</li>
+        </ul>
+    </main>
+    <footer></footer>
+</body>
+</html>
