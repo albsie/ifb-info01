@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>after_before Element</title>
     <style>
-        ul li::before{
+        /*
+        mit before kann man vor einem Element einen Inhalt einfügen. Die Eigenschaft
+        "content" muss dabei verwendet werden auch wenn man ein Bild verwendet.
+        */
+        ul li:before{
              background-image: url(check.png);
             background-size: 20px 20px;
             background-repeat: no-repeat;
@@ -13,8 +17,11 @@
             height: 20px;
             margin-bottom: -5px;
             margin-top: 10px;
-           content: "";
+            content: "";
         }
+        /*
+        mit after kann man nach einem Element einen Inhalt einfügen.
+        */
         ul li:active:after{
              background-image: url(check.png);
             background-size: 20px 20px;
@@ -34,8 +41,8 @@
         <h1>After und Before</h1>
     </header>
     <main>
-        <h2>::before und ::after</h2>
-        <p>::before und ::after erzeugt ein Pseudoelement, dass das erste oder letzte
+        <h2>:before und :after</h2>
+        <p>:before und :after erzeugt ein Pseudoelement, dass das erste oder letzte
         Kind des erzeugten Element ist. Sie werden oft verwendet um kosmetische Inhalte
         mit der Eigenschaft "content" zu einem Element hinzuzufügen</p>
 
