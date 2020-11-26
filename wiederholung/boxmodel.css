@@ -1,0 +1,26 @@
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main ul li {
+    background-color: blue;
+    height: 200px;
+    width: 20%;
+    color: white;
+    padding: 25px;
+    border: solid 5px red;
+    /*margin: 25px;*/
+    float: left;
+}
