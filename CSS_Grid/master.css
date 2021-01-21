@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    padding: 10vh 0;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+main section {
+    margin: 10vh 5vw;
+}
+
+#grid div {
+    background-color: darkblue;
+}
+
+#grid {
+    min-height: 500px;
+    display: grid;
+    /*grid-template-columns: 20% 20% 20% 20% 20%;*/
+    /*grid-template-columns: 1fr 3fr 1fr 2fr 1fr;*/
+    /*grid-template-columns: repeat(5, 1fr);*/
+    /* Linien und Spalten können benannt werden, default ist Nummerierung */
+    grid-template-columns: [startlinie] 1fr [line-2] 2fr [line-3] 1fr [line-4] 1fr [end-line];
+    grid-template-rows: [startlinie] 1fr [row-2] 2fr [row-3] 1fr [row-4] 1fr [endlinie] 2fr;
+    grid-gap: 10px;
+}
+
+.box:first-of-type {
+    grid-column-start: startlinie;
+    grid-column-end: line-3;
+    /* = grid-column-start + grid-column-end */
+    grid-column: startlinie / line-3;
+    grid-row: startlinie / row-3;
+}
+
+.box:nth-of-type(4) {
+    grid-column: line-3 / end-line;
+    grid-row: row-2 / row-4;
+    background-color: orange !important;
+    z-index: 300;
+}
+
+.box:nth-of-type(7) {
+    grid-column: line-2 / line-4;
+    grid-row: row-3 / endline;
+    background-color: purple !important;
+    z-index: 200;
+}
+
+.box:last-of-type {
+    grid-column: line-3 / line-4;
+    grid-row: row-4 / endline;
+    z-index: 400;
+}
+
+#itemContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas:
+        "header header header header"
+        "menu1 menu2 aside aside"
+        "menu3 menu4 aside aside"
+        "footer footer footer footer";
+    grid-gap: 10px;
+}
+
+#itemContainer div {
+    background-color: darkorange;
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu1;
+}
+
+.item3 {
+    grid-area: menu2;
+}
+
+.item4 {
+    grid-area: aside;
+}
+
+.item5 {
+    grid-area: menu3;
+}
+
+.item6 {
+    grid-area: menu4;
+}
+
+.item7 {
+    grid-area: footer;
+}
