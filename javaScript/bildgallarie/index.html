@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript basics</title>
+    <style>
+        h1,
+        #bigImg,
+        #imgContainer {
+            text-align: center;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            color: orangered;
+        }
+
+        img {
+            height: 300px;
+        }
+
+        div {
+            margin: 5vh 0;
+        }
+
+        #imgContainer img {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Die Simpsons
+        </h1>
+    </header>
+    <main>
+        <div id="bigImg">
+            <img src="img/Homer_Simpson.png" alt="Homer">
+        </div>
+        <div id=imgContainer>
+            <img src="img/Homer_Simpson.png" alt="Homer">
+            <img src="img/Bart_Simpson.png" alt="Bart">
+            <img src="img/Lisa_Simpson.png" alt="Lisa">
+            <img src="img/MargeSimpson.png" alt="Marge">
+        </div>
+    </main>
+    <script type="text/javascript">
+        let bigImg = document.querySelector('#bigImg img');
+        let images = document.querySelectorAll('#imgContainer img');
+
+
+        for (let item of images) {
+            item.addEventListener('click', () => {
+                bigImg.src = item.src;
+                bigImg.alt = item.alt;
+            });
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body></html>
