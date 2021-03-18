@@ -78,3 +78,92 @@ if (title === "Mrs") {
 } else {
     console.log("Leider kein Treffer");
 }
+
+// Ternäre Ausdruck
+
+
+title === "Mrs" ? console.log("Sehr geehrte Frau") :
+    title === "Mr" ? console.log("Sehr geehrter Herr") :
+    title === "other" ? console.log("Lieber Gast") :
+    console.log("Leider kein Treffer");
+
+
+zahl === 10 ? console.log("Richtig") : console.log("Falsch"); // Schreibweise 1
+console.log(zahl === 10 ? "Richtig" : "Falsch"); // Schreibweise 2
+
+// Äquivalent
+
+switch (title) {
+    case "Mrs":
+        console.log("Sehr geehrte Frau");
+        break;
+    case "Mr":
+        console.log("Sehr geehrter Herr");
+        break;
+    case "other":
+        console.log("Lieber Gast");
+        break;
+    default:
+        console.log("Leider kein Treffer");
+}
+
+/* Schleifn - loop */
+
+/*
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+console.log(5);
+console.log(6);
+console.log(7);
+console.log(8);
+console.log(9);
+console.log(10);
+*/
+
+//for - Schleife
+
+/*
+for([Initialiesierung]; [Abbruchbedingung], [Schleifenanweisung]){
+[Anweisung]
+}
+*/
+
+for (let i = 0; i <= 10; i += 5) {
+    //console.log(i);
+}
+
+// while - Schleife
+/*
+[Initialiesierung]
+while ([Abbruchsbedingung]) {
+      [Schleifenanweisung]
+        [Anweisung]
+}
+*/
+
+
+let i = 0;
+while (i <= 10) {
+    //console.log(i);
+    i++;
+}
+
+
+// do while - Schleife
+
+/*
+[Initialiesierung]
+do{
+[Schleifenanweisung]
+} while ([Abbruchbedingung]){
+// Anweisung
+}
+*/
+
+i = 0;
+do {
+    //console.log(i);
+    i++
+} while (i <= 100)
