@@ -27,6 +27,22 @@
 2
 1
 */
+console.log('start');
+let i = 0,
+    x = 0,
+    addition = true;
+while (i <= 10) {
+    console.log(x);
+    if (i === 5) {
+        addition = false;
+    }
+    if (addition === true) {
+        x++
+    } else {
+        x--;
+    }
+    i++;
+}
 
 // 3.
 
