@@ -70,41 +70,41 @@ if, else, else if, for, while, do while
 let title = "Mr";
 
 if (title === "Mrs") {
-    console.log("Sehr geehrte Frau");
+    // console.log("Sehr geehrte Frau");
 } else if (title === "Mr") {
-    console.log("Sehr geehrter Herr");
+    //console.log("Sehr geehrter Herr");
 } else if (title === "other") {
-    console.log("Lieber Gast");
+    //console.log("Lieber Gast");
 } else {
-    console.log("Leider kein Treffer");
+    //console.log("Leider kein Treffer");
 }
 
 // Ternäre Ausdruck
 
-
+/*
 title === "Mrs" ? console.log("Sehr geehrte Frau") :
     title === "Mr" ? console.log("Sehr geehrter Herr") :
     title === "other" ? console.log("Lieber Gast") :
     console.log("Leider kein Treffer");
+*/
 
-
-zahl === 10 ? console.log("Richtig") : console.log("Falsch"); // Schreibweise 1
-console.log(zahl === 10 ? "Richtig" : "Falsch"); // Schreibweise 2
+//zahl === 10 ? console.log("Richtig") : console.log("Falsch"); // Schreibweise 1
+//console.log(zahl === 10 ? "Richtig" : "Falsch"); // Schreibweise 2
 
 // Äquivalent
 
 switch (title) {
     case "Mrs":
-        console.log("Sehr geehrte Frau");
+        //console.log("Sehr geehrte Frau");
         break;
     case "Mr":
-        console.log("Sehr geehrter Herr");
+        //console.log("Sehr geehrter Herr");
         break;
     case "other":
-        console.log("Lieber Gast");
+        //console.log("Lieber Gast");
         break;
     default:
-        console.log("Leider kein Treffer");
+        //console.log("Leider kein Treffer");
 }
 
 /* Schleifn - loop */
@@ -167,3 +167,38 @@ do {
     //console.log(i);
     i++
 } while (i <= 100)
+
+
+/* Kompexe Datentypen */
+// Array
+
+
+/*
+Array sind Listen, die aus mehreren Stellen bestehen
+Eine Stelle hat immer einen Index
+Arrays beginnen mit Index 0
+*/
+
+let fruits = ["Apfel", "Birne", "Kiwi"];
+// Element hinzufügen => wird am Ende eingefügt
+fruits.push("Banana");
+// erstes Element ausgeben
+// console.log(fruits[0]);
+// letztes Element des Arrays augeben
+//console.log(fruits[fruits.length-1]);
+// Element am Anfang des Array einfügen
+fruits.unshift("Kirsche");
+// erstes Element löschen
+fruits.shift();
+// letzes Element löschen
+fruits.pop();
+// Belibiges Element löschen - splice(Index, Anzahl der löschenden Elemente)
+fruits.splice(1, 1);
+// Array kopieren
+let fruchtkorb = fruits.slice();
+
+fruits.push("Banana", "Kirschen", "Coco");
+
+for (let i = 0; i < fruits.length; i++) {
+console.log(fruits[i]);
+}
