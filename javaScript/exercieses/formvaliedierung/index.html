@@ -27,61 +27,63 @@
         </nav>
     </header>
     <main class="container">
-        <h1>Meine Anmelde Seite</h1>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email Adresse</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Password</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Password wiederholen</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Vorname</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nachname</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Nation</option>
-                <option value="1">Deutschland</option>
-                <option value="2">Österreich</option>
-                <option value="3">Italien</option>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Wie alt bist du?</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Mann</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Frau</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">Anderes</label>
-        </div>
-        <div class="form-check mt-3">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                Ich bestätige die AGB's.
-            </label>
-        </div>
-        <div class="form-check form-check-inline mt-3">
-            <button type="button" class="btn btn-danger">Abbrechen</button>
-            <button type="button" class="btn btn-success">Speichern</button>
-        </div>
+        <h1 class="mb-3">Meine Anmelde Seite</h1>
+        <form action="#" method="get">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email Adresse</label>
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input type="passwort" name="passwort" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Password wiederholen</label>
+                <input type="passwort" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Vorname</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Max">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nachname</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mustermann">
+            </div>
+            <div class="mb-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Nation</option>
+                    <option value="1">Deutschland</option>
+                    <option value="2">Österreich</option>
+                    <option value="3">Italien</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Wie alt bist du?</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="25">
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Mann</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Frau</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">Anderes</label>
+            </div>
+            <div class="form-check mt-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Ich bestätige die AGB's.
+                </label>
+            </div>
+            <div class="form-check form-check-inline mt-3">
+                <button type="button" class="btn btn-danger">Abbrechen</button>
+                <button type="submit" class="btn btn-success">Speichern</button>
+            </div>
+        </form>
     </main>
 
 </body></html>
