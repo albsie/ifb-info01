@@ -200,5 +200,72 @@ let fruchtkorb = fruits.slice();
 fruits.push("Banana", "Kirschen", "Coco");
 
 for (let i = 0; i < fruits.length; i++) {
-console.log(fruits[i]);
+    //console.log("ich esse" + fruits[i] + "weil ich sie gerne habe");
 }
+
+/* 
+1. Definieren ein Array Autos 
+2. Füge mit push 5 Autos zum Array autos
+3. Lösche das Auto in der mitte des Array wieder raus
+4. Gib das Array mit folgendem Text aus: Ich fahre ein [autos], und fährt sich sehr gut. 
+*/
+let autos = ["BMW", "Ford"];
+autos.push("Mizu", "Skoda", "Camo", "Audi");
+
+autos.splice(4, 1);
+for (let i = 0; i < autos.length; i++) {
+    let text1 = "ich fahre ein " + autos[i] + ", und fährt sich sehr gut.",
+        text2 = `Ich fahre ein ${autos[i]}, und fährt sich sehr gut.`;
+    //console.log(text);
+}
+
+
+// Objekte
+// Objekte bestehen aus Schlüssel - Wert - Paaren
+// Objekte können Eigenschaften und Methoden enthalten
+
+let person = {
+    name: "Sigi",
+    role: "teacher",
+    age: 21,
+    place: "Italy"
+}
+//console.log("Der Name ist " + person.name + " und ist " + person.age + " Jahre alt");
+
+person.car = "Opel";
+person.pc = "Lenovo";
+
+let car = new Object();
+
+car.color = "red";
+car["type"] = "cabrio";
+
+/* Funktionen in JS */
+// dienen zum Auslagern von wiederholenden Prozeduren
+
+// let [funkionsname] = function ([Argumente/Parameter]){
+//funktion
+//}
+
+let sum = function (a, b) {
+    console.log(a + b);
+}
+
+// Schreibe eine Funktion "greed", die einen Namen als Parameter übergibt
+// in der conole soll folgendes ausgegeben werden: Hallo [Name];
+
+let greed = function (name) {
+    console.log("Hallo " + name);
+}
+//greed("Adrian");
+//greed("Felix");
+
+let summerize = function (a, b) {
+    return a + b;
+}
+//console.log(summerize(5, 10));
+
+// Die geschweiften Klammern und das "return" Wort können weckgelassen werden. 
+// let summerize = (a,b) => a+b;
+// Mit nur einem Parameter kann man auch die runden Klammern wecklassen
+// let greed = name => "Hallo " + name;
