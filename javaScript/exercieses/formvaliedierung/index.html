@@ -28,29 +28,29 @@
     </header>
     <main class="container">
         <h1 class="mb-3">Meine Anmelde Seite</h1>
-        <form action="#" method="get">
+        <form action="#" method="post">
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email Adresse</label>
-                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="email" class="form-label">Email Adresse</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Password</label>
-                <input type="passwort" name="passwort" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+                <label for="passwort" class="form-label">Password</label>
+                <input type="passwort" name="passwort" class="form-control" id="passwort" placeholder="Password">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Password wiederholen</label>
-                <input type="passwort" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+                <label for="passwortRpt" class="form-label">Password wiederholen</label>
+                <input type="passwort" name="passwortRpt" class="form-control" id="passwortRpt" placeholder="Password">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Vorname</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Max">
+                <label for="firstname" class="form-label">Vorname</label>
+                <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Max">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nachname</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mustermann">
+                <label for="lastname" class="form-label">Nachname</label>
+                <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Mustermann">
             </div>
             <div class="mb-3">
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" aria-label="Default select example" name="country">
                     <option selected>Nation</option>
                     <option value="1">Deutschland</option>
                     <option value="2">Österreich</option>
@@ -58,29 +58,29 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Wie alt bist du?</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="25">
+                <label for="age" class="form-label">Wie alt bist du?</label>
+                <input type="number" class="form-control" name="age" id="age" placeholder="25">
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="1">
                 <label class="form-check-label" for="inlineRadio1">Mann</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="2">
                 <label class="form-check-label" for="inlineRadio2">Frau</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio3" value="3">
                 <label class="form-check-label" for="inlineRadio3">Anderes</label>
             </div>
             <div class="form-check mt-3">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" value="" name="chkbox" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     Ich bestätige die AGB's.
                 </label>
             </div>
             <div class="form-check form-check-inline mt-3">
-                <button type="button" class="btn btn-danger">Abbrechen</button>
+                <button type="reset" class="btn btn-danger">Abbrechen</button>
                 <button type="submit" class="btn btn-success">Speichern</button>
             </div>
         </form>
