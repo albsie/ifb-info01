@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {}
+
+nav {
+    background-color: #152eeb;
+    width: 200px;
+    position: absolute;
+    padding-top: 80px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+button {
+    margin: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+button div {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 7px;
+    border-radius: 2px;
+}
+
+ul {
+    margin: 15px;
+    padding-bottom: 15px;
+}
+
+li {
+    font-size: 20pt;
+    color: white;
+    margin-bottom: 15px;
+}
