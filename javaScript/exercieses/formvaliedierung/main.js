@@ -1,9 +1,15 @@
 "use strict";
 
 const form = document.getElementById('form'),
+      form2 = document.getElementsByClassName('form'),
+      form3 = document.getElementsByTagName('form'),
+      form4 = document.querySelector('input'), // selectieren wie im CSS
     radioError = document.getElementById('radioErrorText');
 
-form.submitBtn.addEventListener('click', (event) => {
+console.log(form.submitBtn);
+
+
+form.submitBtn.addEventListener('click', event => {
     event.preventDefault();
     let errors = 0;
     /*
@@ -157,7 +163,7 @@ form.submitBtn.addEventListener('click', (event) => {
     }
 
     /*
-    Validierung Checkbox: Muss ausgewählt sein.    
+    Validierung Checkbox: Muss ausgewählt sein.
     */
     console.log(form.chkbox.checked);
     if (form.chkbox.checked) {

@@ -1,5 +1,8 @@
 "use strict"
 
-let button = document.querySelector("button");
+let button = document.querySelector("button"),
+    menu = document.querySelector("nav");
 
-console.log(button);
+button.addEventListener('click', ()=>{
+  menu.classList.toggle('fadeOut');
+});

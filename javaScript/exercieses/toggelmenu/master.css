@@ -17,8 +17,11 @@ nav {
     top: 0;
     left: 0;
     z-index: 1;
+    transition: left 1s ease-in-out;
 }
-
+.fadeOut{
+  left: -200px;
+}
 button {
     margin: 15px;
     cursor: pointer;
